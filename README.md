@@ -3,16 +3,16 @@ Message authentication is crucial for ensuring the integrity and authenticity of
 
 One common approach is to use a Message Authentication Code (MAC) or a cryptographic hash function. Let me break down the process:
 
-Encrypt the Message:
+## Encrypt the Message:
 
 Use a symmetric encryption algorithm like AES to encrypt the message. This results in ciphertext.
-Generate a MAC:
+## Generate a MAC:
 
 Compute a MAC using a cryptographic hash function (e.g., HMAC - Hash-based Message Authentication Code) or a dedicated MAC algorithm. The MAC is calculated over the ciphertext and a secret key.
 Send the Ciphertext and MAC:
 
-Transmit the ciphertext along with the MAC to the receiver.
-Verify at the Receiver:
+## Transmit the ciphertext along with the MAC to the receiver.
+## Verify at the Receiver:
 
 Upon receiving the ciphertext and MAC, the receiver recalculates the MAC using the received ciphertext and the shared secret key.
 Compare MACs:
